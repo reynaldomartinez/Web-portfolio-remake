@@ -82,7 +82,7 @@ p{
 }
 
 .footer{
-  height: 8em;
+  height: 10em;
   background-color: rgb(171, 235, 198);
   display: flex;
   justify-content: center;
