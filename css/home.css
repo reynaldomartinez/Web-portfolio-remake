@@ -1,0 +1,203 @@
+html, body{
+  margin:0;
+  padding: 0;
+}
+
+.root{
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.sec1{
+  background-color: rgb(171, 235, 198);
+  padding-top: 20px;
+  /*height: 60vh;*/
+}
+
+.pc-half{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 25px;
+  margin-bottom: 80px;
+}
+
+.pc-half img{
+  height: 110px;
+}
+
+.left img{
+  margin-right: -20px;
+}
+
+.right img{
+  margin-left: -20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  background-color: rgb(171, 235, 198);
+}
+
+.nav li a:hover{
+  color: #000;
+  text-shadow: 2px 2px #fff;
+}
+
+li a{
+  font-size: 25px;
+  font-family: 'Cuprum', sans-serif;
+  text-decoration-line: underline;
+}
+
+h1{
+  font-family: 'Cuprum', sans-serif;
+}
+
+p{
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.langFwOth{
+  text-decoration-line: underline;
+}
+
+.skills ul li{
+  list-style-type: none;
+}
+
+.skillList{
+  margin-top: 30px;
+}
+
+.social a:hover {
+  color: #000;
+  text-shadow: 2px 2px #fff;
+}
+
+.footer{
+  height: 8em;
+  background-color: rgb(171, 235, 198);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*MEDIA QUERIES FOR SECTION -- PROJECTS*/
+
+@media only screen and (max-width: 767px) {
+  .projects div {
+    width: 80% !important;
+    margin: 10px auto !important;
+  }
+  .mentee-web{
+    background: url("../img/mentee-remake.jpg") center no-repeat;
+    background-size: contain;
+    height: 300px;
+  }
+  .mentee-web:hover{
+    transition: .2s ease 0s;
+    transform: scale(1.1);
+    height: 350px;
+  }
+  .img-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 140px;
+  }
+  .weather-app{
+    background: url("../img/weather-api.jpg") center no-repeat;
+    background-size: contain;
+    height: 300px;
+  }
+  .weather-app:hover{
+    transition: .2s ease 0s;
+    transform: scale(1.1);
+    height: 350px;
+  }
+  .coffee-search{
+    background: url("../img/coffee-search.jpg") center no-repeat;
+    background-size: contain;
+    height: 300px;
+  }
+  .coffee-search:hover{
+    transition: .2s;
+    transform: scale(1.1);
+    height: 350px;
+  }
+  button{
+    background-color: rgb(171, 235, 198) !important;
+    color: #000 !important;
+    border: 1px solid #000 !important;
+  }
+  button:hover{
+    transition: .3s;
+    transform: scale3d(1.1,1.1,1.1);
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .projects div {
+    width: 70% !important;
+    margin: 0 auto!important;
+  }
+  .mentee-web{
+    background: url("../img/mentee-remake.jpg") center no-repeat;
+    background-size: contain;
+    height: 300px;
+  }
+  .mentee-web:hover{
+    transition: .3s;
+    transform: scale3d(1.1,1.1,1.1);
+  }
+  .weather-app{
+    background: url("../img/weather-api.jpg") center no-repeat;
+    background-size: contain;
+    height: 300px;
+  }
+  .weather-app:hover{
+    transition: .3s;
+    transform: scale3d(1.1,1.1,1.1);
+  }
+  .coffee-search{
+    background: url("../img/coffee-search.jpg") center no-repeat;
+    background-size: contain;
+    height: 300px;
+  }
+  .coffee-search:hover{
+    transition: .3s;
+    transform: scale3d(1.1,1.1,1.1);
+  }
+  button{
+    background-color: rgb(171, 235, 198) !important;
+    color: #000 !important;
+    border: 1px solid #000 !important;
+  }
+  button:hover{
+    transition: .3s;
+    transform: scale3d(1.1,1.1,1.1);
+  }
+  .project-name{
+    display: none;
+  }
+  .projects{
+    margin: -40px;
+  }
+  .img-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+  }
+  .project-paragraph{
+    margin-bottom: 70px;
+  }
+}
